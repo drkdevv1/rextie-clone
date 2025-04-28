@@ -9,7 +9,7 @@ const Testimonials = () => {
                 <h2 className="text-[#1143f8] text-3xl md:text-4xl font-bold mb-4">
                     Descubre lo que dicen nuestros clientes
                 </h2>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-normal">
                     Conoce de primera mano lo que es cambiar dinero con Rextie.
                 </p>
             </div>

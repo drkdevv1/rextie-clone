@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { styles } from '@/styles/styles';
 import { articles } from '@/utils/consts/articles';
 
@@ -53,7 +53,7 @@ const Articles = () => {
                 <h2 className="text-[#1143f8] text-3xl md:text-4xl font-bold mb-4">
                     Rextie en los medios
                 </h2>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-normal">
                     Encuentra artículos y noticias en medios que hablan de nuestra casa de cambio online.
                 </p>
             </div>
@@ -84,7 +84,7 @@ const Articles = () => {
                                 ref={scrollRef}
                                 className="flex-1 flex overflow-x-auto hide-scrollbar pb-4 gap-4"
                             >
-                                {articles.map((article, index) => (
+                                {articles.map((article) => (
                                     <div
                                         key={article.id}
                                         data-article-item
