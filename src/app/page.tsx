@@ -1,3 +1,4 @@
+import Amounts from "@/components/home/sections/Amounts";
 import Banks from "@/components/home/sections/Banks";
 import ChangeEasyBar from "@/components/home/sections/ChangeEasyBar";
 import Hero from "@/components/home/sections/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <Banks />
       <WhyUse />
       <ChangeEasyBar />
+      <Amounts />
       <MarqueeStrip />
     </main>
   );
