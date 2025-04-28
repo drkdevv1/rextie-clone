@@ -22,7 +22,9 @@ const Hero = () => {
             {/* Contenido principal */}
             <div className="relative z-10">
                 <div className={`${styles.sectionContainer} pt-4`}>
-                    <UserTypeSelector />
+                    <div className='hidden sm:block'>
+                        <UserTypeSelector className='text-white' />
+                    </div>
                     <Navigator />
                 </div>
 

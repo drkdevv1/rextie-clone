@@ -1,18 +1,21 @@
 import React from 'react';
 
-const UserTypeSelector = () => {
-    // Versión estática sin estado ni funcionalidad
+interface UserTypeSelectorProps {
+    className?: string;
+}
+
+const UserTypeSelector = ({ className }: UserTypeSelectorProps) => {
     return (
-        <div className="flex space-x-6">
+        <div className={`flex space-x-6 ${className}`}>
             <div className="relative">
-                <span className="pb-1 text-white font-bold">
+                <span className="pb-1 font-bold">
                     Personas
                 </span>
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#fe6e01]"></div>
             </div>
 
             <div className="relative">
-                <span className="pb-1 text-white font-medium">
+                <span className="pb-1 font-medium">
                     Empresas
                 </span>
             </div>
