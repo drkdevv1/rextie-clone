@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { styles } from '@/styles/styles';
 import Navigator from '@/components/layout/Navigator';
 import UserTypeSelector from '@/components/layout/UserTypeSelector';
+import ExchangeCalculator from './components/ExchangeCalculator';
 
 
 const Hero = () => {
@@ -32,19 +33,18 @@ const Hero = () => {
                 <div className={`${styles.sectionContainer} pt-12 pb-16`}>
                     <div className="flex flex-col gap-6">
                         {/* Grid para contenido principal */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-48 items-center">
-                            {/* Columna izquierda*/}
+                        <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-48 items-center">
                             <div className="flex flex-col gap-5">
-                                <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+                                <h1 className="text-3xl md:text-5xl text-center xl:text-start font-bold leading-tight">
                                     La casa de cambio online líder del Perú
                                 </h1>
 
-                                <p className="text-[16px]">
+                                <p className="text-[16px] text-center xl:text-start">
                                     Celebramos un nuevo récord: 6 mil millones de dólares cambiados para nuestros clientes
                                 </p>
 
                                 {/* Logos*/}
-                                <div className="flex flex-wrap items-center gap-6 mt-8">
+                                <div className="flex flex-wrap items-center justify-center xl:justify-start gap-6 mt-8">
                                     <div className="flex items-center gap-2">
                                         <Image
                                             src="/assets/images/hero/visa-logo.svg"
@@ -76,7 +76,7 @@ const Hero = () => {
                                         </span>
                                     </div>
 
-                                    <div className="flex items-center gap-2 mt-6">
+                                    <div className="flex items-center gap-2 xl:mt-6">
                                         <Image
                                             src="/assets/images/hero/iso-white.png"
                                             alt="ISO 27001"
@@ -90,9 +90,8 @@ const Hero = () => {
                                 </div>
                             </div>
 
-                            {/* Columna derecha */}
-                            <div className="md:flex justify-end">
-                                {/* <ExchangeCalculator /> */}
+                            <div className="flex justify-center mt-4 xl:justify-end xl:mt-0">
+                                <ExchangeCalculator />
                             </div>
                         </div>
                     </div>
